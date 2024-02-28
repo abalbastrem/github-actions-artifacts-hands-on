@@ -28,11 +28,11 @@ jobs:
     - name: Create artifacts folder
       run: mkdir ./artifacts
 
-    - name: Download hello text file
+    - name: Download text file
       uses: actions/download-artifact@v2
       with:
         name: hello-artifact
-        path: ./artifacts # appends /hello.txt automagically
+        path: ./artifacts
 
-    - name: Say hello
+    - name: Display content of the text file
       run: cat ./artifacts/hello.txt
