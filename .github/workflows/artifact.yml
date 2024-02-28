@@ -35,7 +35,7 @@ jobs:
         path: ./artifacts/hello.txt
 
     - name: List artifacts
-      run: ls -l ./artifacts
+      run: tree ./artifacts
 
     - name: Say hello
       run: cat ./artifacts/hello.txt
