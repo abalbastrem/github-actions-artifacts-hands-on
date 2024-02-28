@@ -32,7 +32,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: hello-artifact
-        path: ./artifacts/hello.txt
+        path: ./artifacts
 
     - name: List artifacts
       run: tree ./artifacts
